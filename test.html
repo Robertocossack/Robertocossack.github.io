@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Embebido de Amazon QuickSight</title>
+    <!-- Agrega cualquier estilo personalizado o librerías de CSS aquí -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .dashboard-container {
+            width: 100%;
+            height: 720px; /* Ajusta la altura según sea necesario */
+            overflow: hidden;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+<h1>Dashboard Embebido de Amazon QuickSight</h1>
+
+<div class="dashboard-container">
+    <!-- Aquí se inserta el iframe con la URL embebida proporcionada -->
+    <iframe
+            width="960"
+            height="720"
+            src="https://eu-west-1.quicksight.aws.amazon.com/sn/embed/share/accounts/767398011258/dashboards/136ef34e-a279-49d6-b878-3958d7b2bf58?directory_alias=gema-des">
+    </iframe>
+</div>
+
+<!-- Script opcional para ajustes adicionales -->
+<script>
+        // Puedes agregar scripts adicionales si necesitas hacer más configuraciones
+        window.onload = function() {
+            console.log("Dashboard embebido cargado.");
+        };
+    </script>
+</body>
+</html>
